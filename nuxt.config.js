@@ -27,7 +27,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/reset.css',
+    'element-ui/lib/theme-chalk/index.css',
   ],
 
   /*
@@ -68,6 +69,7 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    cache: true // edit添加缓存，加快编译速度
   }
 }
